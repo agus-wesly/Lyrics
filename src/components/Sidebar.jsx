@@ -22,7 +22,7 @@ const Sidebar = () => {
         <div className="mt-10">{<NavLinks />}</div>
       </div>
 
-      <div className="text-white absolute top-6 right-3 md:hidden cursor-pointer">
+      <div className="text-white fixed top-6 right-3 md:hidden cursor-pointer">
         {activeSideBar ? <RiCloseLine onClick={() => setActiveSideBar(false)} className="w-6 h-6" /> : <RiMenuLine onClick={() => setActiveSideBar(true)} className="w-6 h-6" />}
       </div>
 

@@ -19,7 +19,7 @@ const Searchbar = () => {
   return (
     <div className="p-6 w-full flex flex-row items-center">
       <RiSearch2Line className="w-6 h-6 text-white mr-3" />
-      <input type="text" value={search} onChange={handleSearch} onKeyPress={handleKeyPress} placeholder="Search A song" className="bg-transparent px-2 py-1 text-white w-[50%] placeholder:text-gray-300 outline-none border:none" />
+      <input type="text" value={search} onChange={handleSearch} onKeyPress={handleKeyPress} placeholder="Search A song" className="bg-transparent p-4 text-white w-[50%] placeholder:text-gray-300 outline-none border:none" />
     </div>
   );
 };
