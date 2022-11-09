@@ -7,7 +7,7 @@ const TopCharts = () => {
   const topChartRef = useRef();
 
   useEffect(() => {
-    if (!isFetching) topChartRef.current.scrollIntoView({ behavior: "smooth" });
+    if (!isFetching) topChartRef.current.focus();
   }, [data]);
 
   if (isFetching) return <Loader text={"Loading song"} />;

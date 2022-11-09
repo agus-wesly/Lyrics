@@ -13,7 +13,7 @@ const Discover = () => {
   };
 
   useEffect(() => {
-    if (!loadingSongGenre) discoverRef.current.scrollIntoView({ behavior: "smooth" });
+    if (!loadingSongGenre) discoverRef.current.focus();
   }, [songByGenre]);
 
   if (loadingSongGenre) return <Loader text={"Loading song"} />;
