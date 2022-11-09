@@ -18,7 +18,7 @@ const TopPlay = () => {
   const topPlayRef = useRef(null);
 
   useEffect(() => {
-    if (!isFetching) topPlayRef.current.scrollIntoView({ behavior: "smooth" });
+    if (!isFetching) topPlayRef.current.focus();
   }, [data]);
 
   const handlePlayTop = (song, i) => {

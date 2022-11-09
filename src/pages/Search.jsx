@@ -9,7 +9,7 @@ const Search = () => {
   const searchRef = useRef();
 
   useEffect(() => {
-    if (!isFetching) searchRef.current.scrollIntoView({ behavior: "smooth" });
+    if (!isFetching) searchRef.current.focus();
   }, [data]);
 
   if (isFetching) return <Loader text={`Searching for ${searchTerm}`} />;
