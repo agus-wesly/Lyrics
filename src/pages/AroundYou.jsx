@@ -23,7 +23,7 @@ const CountryTracks = () => {
   }, []);
 
   useEffect(() => {
-    if (!isFetching) aroundYouRef.current.scrollIntoView({ behavior: "smooth" });
+    if (!isFetching) aroundYouRef.current.focus();
   }, [data]);
 
   if (isFetching) return <Loader text={"Loading around you..."} />;
